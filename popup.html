@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Reader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Speed Reader</h1>
+    
+    <div class="settings">
+      <label for="wpm">Reading Speed (WPM)</label>
+      <div class="speed-control">
+        <button id="decrease-speed" class="speed-btn">−</button>
+        <input type="number" id="wpm" min="100" max="1000" value="300">
+        <button id="increase-speed" class="speed-btn">+</button>
+      </div>
+    </div>
+
+    <div class="settings">
+      <label for="paragraph-mode">On Paragraph Break</label>
+      <select id="paragraph-mode" class="select-control">
+        <option value="pause">Pause</option>
+        <option value="delay">Delay (1s)</option>
+        <option value="none">Continue</option>
+      </select>
+    </div>
+
+    <div class="actions">
+      <button id="read-page" class="primary-btn">
+        📖 Read Full Page
+      </button>
+      <button id="select-text" class="secondary-btn">
+        ✂️ Select Text Area
+      </button>
+    </div>
+
+    <p class="hint">Tip: You can also select text on the page, then click "Read Full Page" to read just that selection.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

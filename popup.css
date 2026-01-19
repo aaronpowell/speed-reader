@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  width: 280px;
+  padding: 16px;
+  background: #1a1a2e;
+  color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 12px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.speed-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #2d2d44;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.speed-btn:hover {
+  background: #3d3d5c;
+}
+
+#wpm {
+  flex: 1;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #2d2d44;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  -moz-appearance: textfield;
+}
+
+#wpm::-webkit-outer-spin-button,
+#wpm::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.secondary-btn {
+  background: #2d2d44;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background: #3d3d5c;
+}
+
+.hint {
+  font-size: 11px;
+  color: #888;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.select-control {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #2d2d44;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 12px;
+  cursor: pointer;
+}
