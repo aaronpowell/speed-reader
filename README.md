@@ -2,6 +2,8 @@
 
 A Chrome/Edge browser extension for reading web pages using Rapid Serial Visual Presentation (RSVP).
 
+[See it in action](https://www.youtube.com/watch?v=BxcRkFzeJ8w)
+
 ## Features
 
 - **Full Page Reading**: Automatically extracts main content from any webpage
@@ -56,3 +58,4 @@ RSVP displays one word at a time at a fixed position, eliminating the need for e
 - Google Chrome (v88+)
 - Microsoft Edge (v88+)
 - Any Chromium-based browser
+
